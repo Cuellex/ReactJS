@@ -1,0 +1,7 @@
+.ItemListContainer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 30px;
+    background-color: green;
+}
