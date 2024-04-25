@@ -2,7 +2,7 @@ import "./ItemListContainer.css"
 
 const ItemListContainer = ( {bienvenida}) => {
     return(
-        <div className="ItemListContainer">
+        <div className="ItemListContainer text-center">
             {bienvenida}
         </div>
     )

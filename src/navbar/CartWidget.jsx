@@ -3,8 +3,8 @@ import "./CartWidget.css"
 
 const CartWidget = () => {
     return(
-        <div>
-            <IoCartOutline id="carrito" size="38px" className="btn btn-outline-success" type="submit"/>
+        <div className="colores carrito">
+            <IoCartOutline id="carrito" size="43px" className="btn btn-outline-success " type="submit"/>
         </div>
     )
 }
