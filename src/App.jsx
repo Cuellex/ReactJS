@@ -1,15 +1,23 @@
-import NavBar from './navbar/NavBar-inicio'
-import ItemListContainer from './itemlistcontainer/ItemListContainer'
+import NavBar from './components/navbar/NavBar-inicio'
+import ItemListContainer from './components/itemlistcontainer/ItemListContainer'
+import { BrowserRouter, Routes, Route} from "react-router-dom"
 
 import './App.css'
 
-function App() {
+function App(){
+    return (
+      <div>
+        <BrowserRouter>
+          <NavBar/>
 
-  return (
-    <div>
-      <NavBar/>
-      <ItemListContainer bienvenida = "¡Bienvenidos a ComercioConFaltaDeImaginacionParaNombres!" />
-    </div>
+          <Routes>
+            <Route path="/" element={<ItemListContainer bienvenida="¡Bienvenidos a este E-commerce sin nombre... por ahora!"/>} />
+            <Route path="/category/:idCategory" element={<ItemListContainer/>} />
+            <Route path='/detail/:idProduct' element={<itemDetailContainer/>} />
+          </Routes>
+          
+        </BrowserRouter>
+      </div>
   )
 }
 
